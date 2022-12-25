@@ -1,0 +1,66 @@
+<div class="bookend">
+  <div class="form">
+    <div class="title"><span style="color: #52b788">Create</span>Author</div>
+
+    <form [formGroup]="Authorform!">
+      <div class="row">
+        <div class="input-container ic1">
+          <input
+            id="firstname"
+            class="input"
+            type="text"
+            name="fullname"
+            placeholder="Full name "
+            formControlName="fullname"
+          />
+        </div>
+
+        <div class="input-container ic1">
+          <input
+            id="lastname"
+            class="input"
+            type="text"
+            placeholder="Birth Date"
+            name="birthdate"
+            formControlName="birthdate"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-container ic2">
+          <input
+            id="lastname"
+            class="input"
+            type="text"
+            placeholder="Birth Place"
+            name="birthplace"
+            formControlName="birthplace"
+          />
+        </div>
+
+        <div class="input-container ic2">
+          <input
+            id="email"
+            class="input"
+            type="text"
+            placeholder="Books"
+            name="books"
+            formControlName="books"
+          />
+        </div>
+      </div>
+      <div class="input-container ic2" style="height: 130px">
+        <input
+          id="email"
+          class="input"
+          type="text"
+          placeholder="Description"
+          name="description"
+          formControlName="description"
+        />
+      </div>
+      <button type="button" class="submit" (click)="onAddAuthor()">Add</button>
+    </form>
+  </div>
+</div>
+//Problem nedir?

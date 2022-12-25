@@ -1,0 +1,34 @@
+<div class="rectangle-1">
+  <div class="container">
+    <div class="Page-title">
+      <div class="header">AUTHOR PAGE</div>
+      <div class="text">
+        To be a good
+        <span style="color: #52b788">Author</span>
+        , you must know good <span style="color: #52b788">Authentication</span>
+      </div>
+    </div>
+    <button class="btn btn-primary" (click)="onNavigate()">Create</button>
+
+    <table class="styled-table">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Birth Date</th>
+          <th>Birth Place</th>
+          <th>Description</th>
+          <th>Books</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let author of AuthorModel">
+          <td>{{ author.FullName }}</td>
+          <td>{{ author.BirthDate }}</td>
+          <td>{{ author.BirthPlace }}</td>
+          <td>{{ author.Description }}</td>
+          <td>{{ author.Books }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
